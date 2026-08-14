@@ -1,0 +1,25 @@
+{
+  "name": "deepseek-harness-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "android:init": "tauri android init",
+    "android:dev": "tauri android dev",
+    "android:build": "tauri android build",
+    "ios:init": "tauri ios init",
+    "ios:dev": "tauri ios dev",
+    "ios:build": "tauri ios build",
+    "harness:install": "CI=true pnpm --dir vendor/deepseek-harness install --frozen-lockfile",
+    "harness:build": "CI=true pnpm --dir vendor/deepseek-harness run build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.0",
+    "vite": "^7.1.0"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.8.0"
+  }
+}
